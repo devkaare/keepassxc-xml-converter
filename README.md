@@ -11,6 +11,6 @@ A [Go compiler](https://go.dev/dl/) is **required** to run this program
 1. Make sure the XML file you want to convert is inside the `tmp/` directory.
 2. Run `go run main.go` to start the program.
 3. Enter the name of your file (and press enter) **DON'T INCLUDE THE FILE EXTENSTION**
-4. If everything went smoothly, a copy of your file (with the csv filetype) should appear inside the `tmp/` directory.
+4. If everything went smoothly, a copy of your file (with the CSV filetype) should appear inside the `tmp/` directory.
 
-Now you can import the new csv file in KeePassXC if you wish to do so!
+Now you can finally import the new CSV file in KeePassXC if you wish to do so!

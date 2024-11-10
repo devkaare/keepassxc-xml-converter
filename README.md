@@ -2,7 +2,7 @@
 
 ## Introduction
 This is a convertion tool which converts [KeePassXC](https://keepassxc.org/) XML exported files into CSV format.
-Which is usefull if you're like me, and exported your KeePassXC password database, and realised you couldn't import it again (in XML format)
+Which is usefull if you're like me, and exported your KeePassXC passwords to a XML file, and realised KeePassXC doesn't support importing XML files. 
 
 ## Requirements
 A [Go compiler](https://go.dev/dl/) is **required** to run this program.

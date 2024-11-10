@@ -13,6 +13,4 @@ Which is usefull if you're like me, and exported your KeePassXC password databas
 3. Enter the name of your file (and press enter) **DON'T INCLUDE THE FILE EXTENSTION**
 4. If everything went smoothly, a copy of your file (with the csv filetype) should appear inside the `tmp/` directory.
 
----
-
 Now you can import the new csv file in KeePassXC if you wish to do so!

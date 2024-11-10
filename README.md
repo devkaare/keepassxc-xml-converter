@@ -1,47 +1,22 @@
 # KeePassXC XML to CSV convertion tool
-## Requierments
-This tool ONLY supports ONE type of STRUCTURE for your KeePassXC XML file:
 
-    Root/ (SUPPORTED STRUCTURE)
-        Group1/
-            Entry1
-            Entry2
-            ... (It supports an infinite amount of entries)
-        Group2/
-            Entry1
-            Entry2
-            ... (It supports an infinite amount of entries)
+![Image](https://keepassxc.org/assets/img/keepassxc.svg)
 
-So basically, you can only have 1 nested layer of groups (inside root). BUT, If you have root and multiple nested layers of groups inside other groups, that doesn't work e.g:
+## Introduction
 
-    Root/ (UNSUPPORTED STRUCTURE)
-        Group1/
-            Entry1
-            Entry2
-                Group2InsideGroup1/
-                    Entry1
-                    Entry2
-        Group2/
-            Entry1
-            Entry2
-                Group3InsideGroup2/
-                    Entry1
-                    Entry2
+This is a convertion tool which converts [KeePassXC](https://keepassxc.org/) XML exported files into CSV format.
+Which is usefull if you're like me, and exported your KeePassXC password database, and realised you couldn't import it again (in XML format)
 
-Having all your entries inside the root itself also doesn't work, e.g:
+## Requirements
 
-    Root/ (UNSUPPORTED STRUCTURE)
-        Entry1
-        Entry2
-        Entry3
-        Entry4
+> A [Go compiler](https://go.dev/dl/) is **required** to run this program
 
-## How to use
-1. Open main.go
-2. Edit line 132 and change "example" to your XML files name and save. e.g "old-passwords-file" instead of "example"
-(don't include the file extension when typing the name of your file, e.g don't add .xml at the end)
-3. Ensure your XML file is inside the tmp directory
-(you can delete the example files if you'd like btw)
-5. Check if you have go installed on your system using the command: go version
-(if go is not installed, please install it on your system https://go.dev/dl/)
-6. In the directory containing the main.go file, run the command: go run main.go
+## Getting Started
+    1. Make sure the XML file you want to convert is inside the `tmp/` directory.
+    2. Run `go run main.go` to start the program.
+    3. Enter the name of your file (and press enter) **DON'T INCLUDE THE FILE EXTENSTION**
+    4. If everything went smoothly, a copy of your file (with the csv filetype) should appear inside the `tmp/` directory.
+
+---
+
+    Now you can import the new csv file in KeePassXC if you wish to do so!

@@ -5,7 +5,7 @@ This is a convertion tool which converts [KeePassXC](https://keepassxc.org/) XML
 Which is usefull if you're like me, and exported your KeePassXC password database, and realised you couldn't import it again (in XML format)
 
 ## Requirements
-> A [Go compiler](https://go.dev/dl/) is **required** to run this program
+A [Go compiler](https://go.dev/dl/) is **required** to run this program
 
 ## Getting Started
 1. Make sure the XML file you want to convert is inside the `tmp/` directory.
